@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="b07.sportsevents">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=" "
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SportsEvents"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ManageEvents"
+            android:exported="false" />
+        <activity
+            android:name=".ManageVenues"
+            android:label="Manage Venues"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBySport"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfile"
+            android:label="Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".AddEvent"
+            android:label="Schedule Event"
+            android:exported="true" />
+        <activity
+            android:name=".AddVenue"
+            android:label="Manage Venues"
+            android:exported="true" />
+        <activity
+            android:name=".ViewEvents"
+            android:label="Upcoming Events"
+            android:exported="true" />
+        <activity
+            android:name=".ViewVenues"
+            android:label="Select Venue"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".EventPopupScreen"
+            android:exported="true" />
+        <activity
+            android:name=".MyEvents"
+            android:label="My Events"
+            android:exported="true" />
+    </application>
+
+</manifest>
